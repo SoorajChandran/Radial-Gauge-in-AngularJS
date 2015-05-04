@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="delightMeterApp">
+
+<head>
+    <title>CherryCloud app</title>
+    <!--link the stylesheet-->
+    <link rel="stylesheet" href="DelightMeterStyle.css" />
+    <!--include jquery and angularJS from CDN-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.15/angular.js"></script>
+    <!--link the javascript file-->
+    <script src="DelightMeter.js"></script>
+</head>
+
+<body>
+    <div id="DelightMeterContainer" ng-controller="delightMeterController">
+
+        <!--custom tag to invoke the delight meter-->
+        <delight-meter ng-model="delightScore"></delight-meter>
+        
+        <!--input to change the delight score value for testing-->
+        <div id="scoreReader">
+        How Delighted are you?<br />
+            0<input id="txtScore" type="range" min="0" max="100" ng-model="delightScore" placeholder="enter the delight score" />100
+        </div>
+    </div>   
+</body>
+
+</html>

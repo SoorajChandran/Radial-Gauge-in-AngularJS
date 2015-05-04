@@ -1,0 +1,28 @@
+﻿<!-- Template to be used by the link fucntion in custom directive -->
+<div id="delightmeter">
+    <svg viewBox="-50 25 500 200" class="svg-content" xmlns='http://www.w3.org/2000/svg'>
+        <g>
+            <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="3s" />   
+            <!-- Drawing each arc -->         
+            <path class='arc' id='arc1' d='' />
+            <path class='arc' id='arc2' d='' />
+            <path class='arc' id='arc3' d='' />
+            <path class='arc' id='arc4' d='' />
+            <path class='arc' id='arc5' d='' />
+            <!-- Drawing the needle -->
+            <g class='needleset'>
+                <circle class='needle-center' cx='200' cy='200' r='5'></circle>
+                <path class='needle' d='M 200 195 L 60 200 L 200 205'></path>
+                <circle class='needle-center' cx='60' cy='200' r='20'></circle>
+                <circle id="needlePointer" class="needle-pointer" cx='60' cy='200' r='17' fill=""></circle>
+                <g class="scoreInCircle">
+                    <text x='55' y='200' fill='black' transform="">{{score}}</text>
+                </g>
+            </g>
+            <!-- Rendering the meter values -->
+            <text x='120' y='195' fill='black'>0</text>
+            <text x='195' y='220' fill='black'>{{score}}</text>
+            <text x='255' y='195' fill='black'>100</text>
+        </g>
+    </svg>
+</div>
