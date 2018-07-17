@@ -12,9 +12,3 @@ Change the range input to desired value to rotate the meter.
 _______________________
 BROWSER SUPPORT:
 Best viewed in Google Chrome
-
-(could face issues in Mozilla Firefox due to transform-origin browser bug)
-
-_______________________
-LIVE URL:
-Url : http://delightmeter.net63.net/DelightMeterApp/DelightMeter.html
